@@ -1,0 +1,27 @@
+vector teams
+
+open Teams.txt
+
+read line by line push_back
+
+loop forever
+
+ask user team name or “quit”
+
+if quit break
+
+check if in teams
+
+if not print “not a team” continue
+
+open WorldSeriesWinners.txt
+
+wins=0
+
+read each line
+
+if line == team wins++
+
+print wins
+
+end
