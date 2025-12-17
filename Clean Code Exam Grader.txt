@@ -1,0 +1,39 @@
+Clean Code Exam Grader:
+
+Declare arrays: correct[], student[], missed[]
+
+Call loadAnswers("CorrectAnswers.txt", correct)
+
+if false, display error and exit
+
+Call loadAnswers("StudentAnswers.txt", student)
+
+if false, display error and exit
+
+Call gradeExam(correct, student, missed, missedCount) → returns numCorrect
+
+Call calcPercent(numCorrect, NUM_Q) → returns percent
+
+Call didPass(percent) → returns pass
+
+Call printReport(...)
+
+loadAnswers
+
+Open file
+
+If open fails return false
+
+Read size answers into array
+
+If read fails return false
+
+Close file, return true
+
+gradeExam
+
+Compare correct[i] and student[i]
+
+Track missed questions (1-based numbers)
+
+Return number correct
