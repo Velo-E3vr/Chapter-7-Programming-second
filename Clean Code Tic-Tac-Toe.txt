@@ -1,0 +1,23 @@
+Clean Code Tic-Tac-Toe:
+
+Main
+
+initBoard(board)
+
+player = 'X'
+
+while game not over:
+
+displayBoard(board)
+
+getMove(row, col)
+
+while not isValidMove(board,row,col) ask again
+
+makeMove(board,row,col,player)
+
+if hasWinner(board,player) end
+
+else if isTie(board) end
+
+else switchPlayer(player)
