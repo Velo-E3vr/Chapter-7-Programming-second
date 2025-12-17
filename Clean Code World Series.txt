@@ -1,0 +1,19 @@
+Clean Code World Series
+
+Main
+
+loadTeams("Teams.txt", teams) or exit on error
+
+runQueryLoop(teams)
+
+runQueryLoop
+
+prompt user repeatedly
+
+sentinel ends loop
+
+validate team exists
+
+call countWins("WorldSeriesWinners.txt", team, wins)
+
+display wins
