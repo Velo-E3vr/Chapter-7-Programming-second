@@ -1,0 +1,51 @@
+set NUM_Q = 20
+
+make array correct[NUM_Q]
+
+make array student[NUM_Q]
+
+make array missed[NUM_Q]
+
+missedCount = 0
+
+open CorrectAnswers.txt
+
+if fail print error and quit
+
+loop i = 0 to NUM_Q-1: read correct[i]
+
+open StudentAnswers.txt
+
+if fail print error and quit
+
+loop i = 0 to NUM_Q-1: read student[i]
+
+correctCount = 0
+
+loop i = 0 to NUM_Q-1
+
+if student[i] == correct[i]
+
+correctCount++
+
+else
+
+missed[missedCount] = i+1
+
+missedCount++
+
+percent = (correctCount / NUM_Q) * 100
+
+if percent >= 70 pass else fail
+
+print report:
+
+correctCount
+
+incorrect = NUM_Q - correctCount
+
+percent
+
+pass/fail
+
+list missed question numbers
