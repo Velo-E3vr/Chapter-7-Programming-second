@@ -1,0 +1,19 @@
+board[3][3] fill with ' '
+
+player = 'X'
+
+loop forever
+
+display board
+
+ask row col
+
+while invalid (out of range or spot not empty) ask again
+
+board[row][col] = player
+
+if winner(player) print winner end
+
+if tie print tie end
+
+switch player
